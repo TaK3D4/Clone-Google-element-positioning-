@@ -13,3 +13,51 @@ body{
     color: var(--color-azul);
 }
 
+
+header nav{
+    float: right;
+    margin-right: 30px;
+    padding: 10px 0;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 13;
+    vertical-align: middle;
+}
+
+nav .nav-link{
+    color: var(--color-negro);
+}
+
+nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+nav .nav-apps{
+    padding: 5px;
+    border-radius: 50%;
+}
+
+nav .nav-apps:hover{
+    background-color: var(--color-claro);
+}
+
+nav .nav-apps img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav .nav-login{
+    background-color: var(--color-azul);
+    color: var(--color-claro);
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 100px;
+}
+
+nav .nav-login:hover{
+    box-shadow: 0 0 3px var(--color-azul);
+}
