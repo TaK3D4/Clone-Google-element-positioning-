@@ -1,0 +1,15 @@
+:root{
+    --color-azul: #1a73e8;
+    --color-negro: #202124;
+    --color-blanco: #ffffff;
+    --color-claro: #ededed;
+    --color-gris: #b4b4b4;
+
+    --fuente-principal: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    color: var(--color-azul);
+}
+
