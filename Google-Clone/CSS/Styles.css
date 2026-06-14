@@ -71,6 +71,6 @@ section p{
     height: 150px;
     background-color: aqua;
     padding: 5px;
-
     overflow: auto;
+    writing-mode: sideways-lr;
 }
