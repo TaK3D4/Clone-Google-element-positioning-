@@ -10,7 +10,10 @@
 
 body{
     font-family: var(--fuente-principal);
-    color: var(--color-azul);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
 }
 
 header{
@@ -66,11 +69,132 @@ nav .nav-login:hover{
     box-shadow: 0 0 3px var(--color-azul);
 }
 
-section p{
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
-    padding: 5px;
-    overflow: auto;
-    writing-mode: sideways-lr;
+/* Estilos de Main
+====================== */
+
+main{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.buscador-bar .label-buscador{
+    display: block;
+    border: 1px solid var(--color-gris);
+    padding: 10px 15px;
+    border-radius: 100px;
+    width: 584px;
+    overflow: hidden;
+}
+
+.buscador-bar .label-buscador:hover{
+    box-shadow: 0 0 3px var(--color-gris);
+}
+
+.buscador-bar .label-buscador img{
+    vertical-align: middle;
+}
+
+.label-buscador .icon-buscar, .label-buscador input{
+    float: left;
+}
+
+.label-buscador a{
+    float: right;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.label-buscador input{
+    font-size: 16px;
+    width: 80%;
+    border: none;
+}
+
+.label-buscador input:focus{
+    outline: none;
+}
+
+/* Estilo de los botones 
+============================*/
+
+.botones{
+    margin-top: 30px;
+}
+
+.botones button{
+    all: unset;
+    padding: 10px 20px;
+    background-color: var(--color-claro);
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--color-negro);
+}
+
+.botones button:hover{
+    outline: 1px solid var(--color-gris);
+}
+
+.botones p{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-negro);
+}
+
+
+/* 
+Estilos de Footer
+==========================================
+*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-claro);
+    padding: 15px 0px;
+}
+
+footer .pais{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-gris);
+}
+
+.links{
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.links ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.links ul:first-child{
+    float: left;
+}
+
+.links ul:last-child{
+    float: right;
+    margin-bottom: 0px;
+}
+
+.links ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links ul a{
+    text-decoration: none;
+    color: var(--color-negro);
+
+}
+
+.links ul a:hover{
+    text-decoration: underline;
 }
